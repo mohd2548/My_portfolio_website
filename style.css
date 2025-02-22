@@ -174,26 +174,48 @@ body {
     color: white;
     margin: 212px;
     margin-top: 15rem;
-    background-color: rgb(42, 42, 42);
     padding: 50px;
     border-radius: 20px;
     font-size: 1.1rem;
     text-align: center;
 }
 
-.aboutMe p {
-    text-align: center;
-    width: 100%;
+#about img {
+    width: 200px;
+    border-radius: 10px;
+    float: left;
 }
 
-.aboutMe h2 {
-    margin: 12px;
+#about ul {
+    display: flex;
+}
+
+#about ul li {
+    margin: 50px;
+    list-style: none;
+    margin-top: 30px;
+}
+
+#about ul li:hover {
+    background-color: rgb(174, 26, 26);
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+#about p {
+    margin: 10px;
+    width: 80%;
+    margin-top: -15px;
+    margin-left: 100px;
 }
 
 .Skills {
     display: inline;
 }
-.Skills h2{
+
+.Skills h2 {
     color: white;
     text-align: center;
 }
@@ -206,9 +228,10 @@ body {
     align-items: center;
     margin: 40px;
 }
-.skillBox img{
-   height: 250px;
-   width: 250px;
+
+.skillBox img {
+    height: 250px;
+    width: 250px;
 }
 
 #projects {
@@ -272,4 +295,87 @@ footer ul li {
 footer ul li a {
     color: white;
     text-decoration: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    body {
+        /* overflow: hidden; */
+    }
+
+    .navbar {
+        width: 60rem;
+    }
+
+    .navbar ul {
+        display: none;
+    }
+
+    .socialMedia {
+        margin-left: 26rem;
+    }
+
+    .slides img {
+        width: 50rem;
+    }
+
+    .text {
+        margin-left: -16rem;
+        font-size: 2.5rem;
+    }
+
+    .buttons button {
+        margin-right: 600px;
+    }
+
+    #about {
+        display: inline-block;
+        margin-left: 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    #about h2 {
+        text-align: center;
+        width: 300vw;
+    }
+
+    #about img {
+        width: 20rem;
+    }
+
+    #about p {
+        margin: 12px;
+        margin-left: 11px;
+        width: 40%;
+    }
+
+    #about p {
+        margin: 12px;
+        margin-left: 359px;
+    }
+
+    #about ul li {
+        margin: 38px;
+    }
+
+    .Skills{
+        align-items: center;
+        text-align: center;
+    }
+    .Skills h2{
+        margin-left: 50%;
+        font-size: 4rem;
+        width: 159%;
+    }
+
+    .skillBox {
+        margin-left: 50%;
+    }
+
+    .skillBox img {
+        width: 25rem;
+        height: 25rem;
+    }
 }
