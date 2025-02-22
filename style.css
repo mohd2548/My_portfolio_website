@@ -378,4 +378,8 @@ footer ul li a {
         width: 25rem;
         height: 25rem;
     }
+
+    #projects{
+        display: inline-flex;
+    }
 }
