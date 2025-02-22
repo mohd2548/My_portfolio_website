@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sahil - Personal portfolio</title>
+    <title>Sahil Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -14,22 +14,22 @@
         <nav class="navbar">
             <div class="logo">
                 <a href="index.html">
-                    <h2>Sahil.</h2>
+                    <h2>My Portfolio</h2>
                 </a>
             </div>
-            <ul>
+            <ul id="lists">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">Project</a></li>
-                <li><a href="#">About me</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#">Certificate</a></li>
+
             </ul>
             <div class="socialMedia">
                 <div class="app">
-                    <a href="https://www.instagram.com/mohd_sahil_254/" target="_blank">
-                        <img src="insta.svg" alt="">
+                    <a href="https://github.com/mohd2548" target="_blank">
+                        <img src="github.svg">
                     </a>
-                </div>
-                <div class="app">
-                    <img src="facebook.svg" alt="">
                 </div>
                 <div class="app">
                     <a href="https://www.linkedin.com/in/sahil-ansari-a450ab256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
@@ -41,126 +41,101 @@
         </nav>
     </header>
     <main>
-        <div class="left">
-            Hello,
-            <div>
-                my name is <span>Sahil</span>
-            </div>
-            <div>
-                I am Data Science
-            </div>
-            <button class="btn">Hire me</button>
-            <button class="btn2">let's Talk</button>
-        </div>
-        <div class="right">
-            <img src="WhatsApp_Image_2025-01-10_at_12.48.08_4c3fff82-removebg-preview.png" alt="">
-        </div>
-        </div>
-        <div class="aboutMe">
-            <div class="aboutBox">
-                <h2>About Me</h2>
-                <div class="ProfileImg">
-                    <img src="Screenshot_2024-12-27_032027-removebg-preview.png" alt="">
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="images/images2.jpg" alt="Image 1">
+                    <div class="text">Hello, I am Mohd Sahil Ansari</div>
                 </div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic adipisci explicabo unde nihil
-                    assumenda
-                    debitis animi maiores sed, enim esse, similique, perferendis nam ex praesentium delectus fuga
-                    vitae
-                    quaerat? Tempora sint, voluptas, accusantium ad asperiores nihil ea libero soluta ex quaerat
-                    nam,
-                    repellendus odit dolorum exercitationem eaque assumenda! Corrupti delectus facilis dolorum
-                </p>
-                <div class="interest">
-                    <h3>My Interest</h3>
-                    <img src="music.svg" alt="">
-                    <img src="camra.svg" alt="">
-                    <img src="computer.svg" alt="">
+                <div class="slide">
+                    <img src="images/image3.jpg" alt="Image 3">
+                    <div class="text">Welcome to my Data science Portfolio</div>
+                </div>
+                <div class="slide">
+                    <img src="images/images2.jpg" alt="Image 2">
+                    <div class="text">You can find my thought and ideas here!</div>
                 </div>
             </div>
+            <div class="buttons">
+                <button onclick="prevSlide()">&#10094;</button>
+                <button onclick="nextSlide()">&#10095;</button>
+            </div>
+        </div>
+        <div id="about">
+            <h2>About me</h2>
+            <p>
+                I am a Data Scientist with a passion for turning raw data into actionable insights.
+                With a strong background in machine learning, statistical analysis, and data visualization.
+
+                I specialize in uncovering patterns, making data-driven decisions, and building predictive
+                models that drive business success.
+
+                My expertise includes Python, SQL, and big data technologies, and I have hands-on experience with
+                frameworks such as Pandas, NumPy, Scikit-learn. Whether it's analyzing large
+                datasets,
+
+                optimizing algorithms, or creating interactive dashboards, I thrive on solving complex
+                problems with data.
+
+                Currently, I am focused on developing AI-driven solutions, predictive analytics, and automation to
+                enhance business intelligence. I enjoy working on projects that bridge the gap between data and
+                decision-making, empowering organizations with strategic insights.
+
+                Let's connect and explore how we can leverage data to drive innovation!
+                hello
+            </p>
         </div>
         <div class="Skills">
-            <h2>My Skills</h2>
-            <div class="skillLeft">
-                <div class="skillBox">
-                    <div class="skillBoxLeft">
-                        <img src="A skilled developer.jpg" alt="">
-                    </div>
-                    <div class="skillBoxRight">
-                        <h3>Web Disigner</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, fugiat.</p>
-                    </div>
-                </div>
-                <div class="skillBox">
-                    <div class="skillBoxLeft">
-                        <img src="Workstation Pictures _ Freepik.jpg" alt="">
-                    </div>
-                    <div class="skillBoxRight">
-                        <h3>FreeLancing</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, fugiat.</p>
-                    </div>
-                </div>
+            <h2>MY Skills</h2>
+            <div class="skillBox">
+                <img src="images/Numpy.png" alt="">
             </div>
-            <div class="skillRight">
-                <div class="skillBox">
-                    <div class="skillBoxLeft">
-                        <img src="Python.jpg" alt="">
-                    </div>
-                    <div class="skillBoxRight">
-                        <h3>Python</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, fugiat.</p>
-                    </div>
-                </div>
-                <div class="skillBox">
-                    <div class="skillBoxLeft">
-                        <img src="a422887b-69f2-4b9a-9b34-05b4b86d1551.jpg" alt="">
-                    </div>
-                    <div class="skillBoxRight">
-                        <h3>Java</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque, fugiat.</p>
-                    </div>
-                </div>
+            <div class="skillBox">
+                <img src="images/pandas.png" alt="">
             </div>
-            <div class="myProjects">
-                <h2>My Projects</h2>
-                <div class="projectContainer">
-                    <div class="projectBox">
-                        <img src="A skilled developer.jpg" alt="">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis maiores quam libero
-                            ullam
-                            voluptas voluptatem inventore? Illum, perferendis! Officiis error, harum iure magni fugiat
-                            consectetur quos facilis maxime a quae impedit porro, aspernatur numquam voluptate? Quod
-                            debitis
-                            vitae consectetur aliquam!
-                        </p>
-                        <div>
-                            hello
-                        </div>
-                    </div>
-                    <div class="projectBox">
-                        <img src="A skilled developer.jpg" alt="">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis maiores quam libero
-                            ullam
-                            voluptas voluptatem inventore? Illum, perferendis! Officiis error, harum iure magni fugiat
-                            consectetur quos facilis maxime a quae impedit porro, aspernatur numquam voluptate? Quod
-                            debitis
-                            vitae consectetur aliquam!
-                        </p>
-                    </div>
-                    <div class="projectBox">
-                        <img src="A skilled developer.jpg" alt="">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis maiores quam libero
-                            ullam
-                            voluptas voluptatem inventore? Illum, perferendis! Officiis error, harum iure magni fugiat
-                            consectetur quos facilis maxime a quae impedit porro, aspernatur numquam voluptate? Quod
-                            debitis
-                            vitae consectetur aliquam!
-                        </p>
-                    </div>
-                </div>
+            <div class="skillBox">
+                <img src="images/sciketLearn.png" alt="">
             </div>
+            <div class="skillBox">
+                <img src="images/Machine-learning-logo-1.webp" alt="">
+            </div>
+            <div class="skillBox">
+                <img src="images/images-removebg-preview.png" alt="">
+            </div>
+            <div class="skillBox">
+                <img src="images/matlib.png" alt="">
+            </div>
+            <div class="skillBox">
+                <img src="images/mysql.png" alt="">
+            </div>
+            <div class="skillBox">
+                <img src="images/flask.png" alt="">
+            </div>
+            <div class="skillBox">
+                <img src="images/mongo.png" alt="">
+            </div>
+        </div>
+        <div id="projects">
+
+            <h2>My Projects</h2>
+
+            <div class="projectContainer">
+                <a href="https://movierecomend-bnjs8b5gtpt74thgacfwhf.streamlit.app/?utm_medium=social" target="_blank">
+                    <div class="projectBox">
+                        <img src="images/film-reel-147631_1280.png" alt="">
+                        <h2>Movie Recommendor System</h2>
+                </a>
+            </div>
+
+            <div class="projectBox">
+                <img src="images/schoolgirl-7822273_1280.png" alt="">
+            </div>
+
+            <div class="projectBox">
+                <img src="images/student-3176407_1280.png" alt="">
+            </div>
+        </div>
+        </div>
     </main>
     <footer>
         <h2>Thank for Visiting</h2>
@@ -189,5 +164,6 @@
         <div>&copy;www.sahilportfolio.com</div>
     </footer>
 </body>
+<script src="script.js"></script>
 
 </html>
