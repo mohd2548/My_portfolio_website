@@ -12,6 +12,7 @@ html {
 
 body {
     background-color: var(--primary-bg);
+    width: 100%;
 }
 
 * {
@@ -230,10 +231,9 @@ body {
 .skillBox {
     background-color: rgb(22, 22, 22);
     border-radius: 20px;
-    margin: 20px;
     display: inline-block;
     align-items: center;
-    margin: 40px;
+    margin: 15px;
 }
 
 .skillBox img {
@@ -285,24 +285,6 @@ footer {
     text-align: center;
 }
 
-.links {
-    display: flex;
-}
-
-footer ul {
-    margin: 20px;
-    margin-left: 10rem;
-}
-
-footer ul li {
-    margin: 28px;
-    list-style: none;
-}
-
-footer ul li a {
-    color: white;
-    text-decoration: none;
-}
 
 
 @media only screen and (max-width: 600px) {
@@ -405,9 +387,13 @@ footer ul li a {
         font-size: 2rem;
     }
 
+    .skillBox {
+        display: inline-block;
+    }
+
     .skillBox img {
-        width: 15rem;
-        height: 15rem;
+        width: 8rem;
+        height: 8rem;
     }
 
     .projectBox {
@@ -428,15 +414,12 @@ footer ul li a {
     }
 
     footer {
-        width: 20rem;
-        height: 14rem;
+        width: 100%;
+        height: 4rem;
+        padding: 22px;
     }
-
-    footer h2 {
-        margin-left: 10%;
-    }
-
-    footer ul {
-        margin: -8px;
+    footer a{
+       color: white;
+       text-decoration: none;
     }
 }
