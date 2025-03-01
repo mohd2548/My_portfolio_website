@@ -27,7 +27,7 @@ Education.addEventListener("click", () => {
     Personal.style.backgroundColor = "";
     Education.style.padding = "3px"
     let paragraph = document.querySelector("#about p");
-    paragraph.innerText = "Education is Education";
+    paragraph.innerText = "With a background in [Your Degree/Major], I have developed strong skills in Python, R, SQL, and machine learning. Beyond data, I enjoy [mention hobbies or interests, e.g., reading, traveling, coding challenges, or any personal passion], which helps me stay creative and open-minded.";
 
 })
 
@@ -37,7 +37,7 @@ General.addEventListener("click", () => {
     Personal.style.backgroundColor = "";
     General.style.padding = "3px"
     let paragraph = document.querySelector("#about p");
-    paragraph.innerText = "genral is general";
+    paragraph.innerText = "I am a passionate Data Scientist with a deep interest in turning raw data into meaningful insights. With a strong foundation in statistics, machine learning, and data visualization, I thrive on solving complex problems and making data-driven decisions.";
 })
 
 Personal.addEventListener("click", () => {
@@ -46,9 +46,24 @@ Personal.addEventListener("click", () => {
     Personal.style.backgroundColor = "red";
     Personal.style.padding = "3px"
     let paragraph = document.querySelector("#about p");
-    paragraph.innerText = "personal is personal";
+    paragraph.innerText = "I believe in continuous learning and always strive to enhance my skills in AI, analytics, and statistical modeling. Whether it's working on exciting projects or collaborating with like-minded individuals, I am always eager to push the boundaries of what data can do.";
 })
 
+let moreapps = document.querySelector(".moreApps");
+
+moreapps.addEventListener("click", () => {
+    let navbar = document.querySelector(".navbar ul");
+    let mainNavbar = document.querySelector(".navbar");
+    navbar.style.display = "block";
+    navbar.style.visibility = "visible";
+    navbar.style.opacity = "1";
+
+    let apps = document.querySelectorAll(".socialMedia");
+    apps.forEach(app => {
+        app.style.display = "none";
+    });
+
+});
 
 
 

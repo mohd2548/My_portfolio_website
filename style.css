@@ -1,8 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Italianno&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kalnia+Glaze:wght@100..700&family=Oswald:wght@500&family=Playwrite+CU:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
+:root {
+    --primary-bg: rgb(30, 29, 31);
+    --secondary-bg: rgb(22, 22, 22);
+    --text-color: white;
+}
+
 html {
     scroll-behavior: smooth;
-    /* Smooth scrolling effect */
+}
+
+body {
+    background-color: var(--primary-bg);
 }
 
 * {
@@ -16,9 +25,6 @@ html {
 }
 
 .slider {
-    width: 85rem;
-    height: 40rem;
-    overflow: hidden;
     position: relative;
     border-radius: 10px;
 }
@@ -26,7 +32,6 @@ html {
 .slides {
     display: flex;
     width: 100%;
-    /* Set width to hold all images */
     transition: transform 0.5s ease-in-out;
 }
 
@@ -55,7 +60,6 @@ html {
     height: 100%;
     object-fit: cover;
     opacity: 0.4;
-    /* Adjusted opacity for better visibility */
 }
 
 .information {
@@ -83,10 +87,10 @@ html {
     border: none;
     padding: 10px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 1px;
     margin: 20px;
+    opacity: 0.6;
 }
-
 
 .information {
     position: absolute;
@@ -204,12 +208,15 @@ body {
     transition: 0.5s;
 }
 
+
 #about p {
-    margin: 10px;
-    width: 80%;
-    margin-top: -15px;
-    margin-left: 100px;
+    margin: 10px auto;
+    width: 90%;
+    text-align: center;
+    margin-top: -20px;
+    margin-left: 20px;
 }
+
 
 .Skills {
     display: inline;
@@ -299,25 +306,42 @@ footer ul li a {
 
 
 @media only screen and (max-width: 600px) {
-
-    body {
-        /* overflow: hidden; */
+    .navbar {
+        width: 20rem;
+        height: 75px;
     }
 
-    .navbar {
-        width: 60rem;
+    .navbar a {
+        font-size: 10px;
+    }
+
+    .slider {
+        width: 63rem;
+        height: 29rem;
+        overflow: hidden;
+        position: relative;
     }
 
     .navbar ul {
         display: none;
+        margin-left: 4rem;
+        background-color: black;
+        height: 33rem;
+        margin-top: 0;
     }
 
     .socialMedia {
-        margin-left: 26rem;
+        margin-left: 1rem;
+    }
+
+    .app {
+        width: 40px;
+        font-size: 1rem;
     }
 
     .slides img {
-        width: 50rem;
+        width: 48.1rem;
+        margin-left: -14rem;
     }
 
     .text {
@@ -326,60 +350,93 @@ footer ul li a {
     }
 
     .buttons button {
-        margin-right: 600px;
+        margin-right: 40rem;
+        font-size: 1rem;
+    }
+
+    .btn-2 {
+        position: relative;
+        right: 27rem;
     }
 
     #about {
         display: inline-block;
-        margin-left: 0;
+        margin-left: -150px;
         text-align: center;
-        align-items: center;
+        margin-top: 0rem;
     }
 
     #about h2 {
         text-align: center;
-        width: 300vw;
+        margin-left: 28%;
     }
 
     #about img {
-        width: 20rem;
+        width: 6rem;
+        position: relative;
+        left: 7rem;
+    }
+
+    #about ul {
+        font-size: 10px;
+        margin-left: 262px;
+        margin-top: -1rem;
     }
 
     #about p {
         margin: 12px;
-        margin-left: 11px;
-        width: 40%;
-    }
-
-    #about p {
-        margin: 12px;
-        margin-left: 359px;
+        margin-left: 14rem;
+        width: 43%;
+        font-size: 11px;
+        margin-top: -2.5rem;
     }
 
     #about ul li {
-        margin: 38px;
+        margin-left: -35px;
     }
 
-    .Skills{
+    .Skills {
         align-items: center;
         text-align: center;
-    }
-    .Skills h2{
-        margin-left: 50%;
-        font-size: 4rem;
-        width: 159%;
+
     }
 
-    .skillBox {
-        margin-left: 50%;
+    .Skills h2 {
+        font-size: 2rem;
     }
 
     .skillBox img {
-        width: 25rem;
-        height: 25rem;
+        width: 15rem;
+        height: 15rem;
     }
 
-    #projects{
-        display: inline-flex;
+    .projectBox {
+        margin: 10px;
+    }
+
+    .projectBox img {
+        width: 60px;
+    }
+
+    .projectBox h2 {
+        font-size: 10px;
+    }
+
+    .slide div {
+        font-size: 1rem;
+        margin-left: -21rem;
+    }
+
+    footer {
+        width: 20rem;
+        height: 14rem;
+    }
+
+    footer h2 {
+        margin-left: 10%;
+    }
+
+    footer ul {
+        margin: -8px;
     }
 }
