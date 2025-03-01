@@ -220,7 +220,7 @@ body {
 
 
 .Skills {
-    display: inline;
+    display: inline-block;
 }
 
 .Skills h2 {
@@ -229,11 +229,15 @@ body {
 }
 
 .skillBox {
-    background-color: rgb(22, 22, 22);
+    background-color: rgb(31, 29, 29);
     border-radius: 20px;
-    display: inline-block;
     align-items: center;
-    margin: 15px;
+    display: inline-flex;
+    margin: 40px;
+}
+
+.skillBox:hover {
+    box-shadow: 5px 5px 10px rgb(52, 50, 50);
 }
 
 .skillBox img {
@@ -277,19 +281,34 @@ body {
 
 footer {
     background-color: rgb(15, 13, 13);
-    color: white;
-    position: relative;
-    top: 40vh;
-    height: 42vh;
-    padding: 10px;
+    height: 2rem;
     text-align: center;
+    position: relative;
+    top: 10rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
 }
 
 
-
 @media only screen and (max-width: 600px) {
+
+    html,
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    @media (max-width: 768px) {
+        body {
+            zoom: 1;
+        }
+    }
+
     .navbar {
-        width: 20rem;
+        width: 21rem;
         height: 75px;
     }
 
@@ -418,8 +437,9 @@ footer {
         height: 4rem;
         padding: 22px;
     }
-    footer a{
-       color: white;
-       text-decoration: none;
+
+    footer a {
+        color: white;
+        text-decoration: none;
     }
 }
